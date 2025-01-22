@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/logo.png" type="">
+    <title>Beautiful Bangladesh</title>
+    <style>
+    /* General body styling */
+	body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: black; /* Sets background to black */
+        color: white; /* Sets text color to white */
+    }
+
+    /* Navbar styling */
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Aligns items on opposite ends */
+        align-items: center;
+        padding: 10px 20px;
+        background-color: black;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-family: 'Brush Script MT', cursive; /* Gives a handwritten style */
+        color: white;
+    }
+
+    .nav-links {
+        list-style: none; /* Removes default list style */
+        display: flex; /* Horizontally aligns items */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Spacing between items */
+    }
+
+    .nav-links a {
+        text-decoration: none; /* Removes underline */
+        color: white; /* Link text color */
+        font-size: 16px;
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .nav-links a.active {
+        color: orange; /* Highlights the active page link */
+    }
+
+    .nav-links a:hover {
+        color: orange; /* Changes color on hover */
+    }
+
+    /* Heading styling */
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: rgb(0, 0, 0); /* Black text */
+        background-color: rgb(255, 255, 255); /* White background */
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+        transition: background-color 0.5s ease; /* Smooth transition on hover */
+        cursor: pointer;
+    }
+        
+    h1:hover {
+        background-color: rgb(200, 200, 200); /* Changes background on hover */
+    }
+        
+    /* Styling for video rows */
+    .row {   
+        display: flex; /* Horizontally aligns items */
+        flex-basis: 33%; /* Adjusts size proportionally */
+        margin: 10px;
+        padding: 10px;
+        gap: 40px; /* Spacing between videos */
+        background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+        transition: background-color 0.5s ease;
+        overflow: hidden;
+        position: relative;
+    }
+        
+    .row:hover {
+        background-color: rgb(200, 200, 200); /* Changes background on hover */
+    }
+		
+    /* Footer styling */
+    .footer_section {
+        background-color: #2c2f33;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-around; /* Evenly distributes items */
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px; /* Spacing between items */
+    }
+
+    .footer_section_item {
+        flex: 1; /* Equal spacing for all items */
+        min-width: 250px; /* Ensures minimum size */
+    }
+
+    .footer_section_item h3 {
+        font-family: 'Georgia', serif; /* Serif font for headings */
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .footer_section_item p {
+        font-size: 14px;
+        margin: 5px 0;
+        line-height: 1.6; /* Adjusts spacing between lines */
+        color: #ffffff;
+    }
+
+    .footer_section_item i {
+        margin-right: 8px;
+        color: #ff5722; /* Adds color to icons */
+    }
+
+    .social_icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Spacing between icons */
+        margin-top: 10px;
+    }
+
+    .social_icons a {
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .social_icons a:hover {
+        color: #ff5722; /* Changes icon color on hover */
+    }
+    </style>
+</head>
+<body>
+	<!-- Navbar -->
+	 <nav class="navbar">
+        <div class="logo">Beautiful Bangladesh</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tourist-spots">Tourist Spots</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+	
+	<!-- Welcome Heading -->
+    <h1>Welcome to Bangladesh </h1>
+    <br><br><br>
+	
+	<!-- Video Rows -->
+    <div class="row">
+        <!-- Each iframe is for embedding a YouTube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cn4G2lZ_g2I" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rkpzYNB6xks" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T6INK2Ch1PY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tb92b9oHeMQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e5-KLC70lE4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rxJTYwwxOCU" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b1ssUOLoSig" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/puDBmnIXe_k" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SIHL-SHPiTw" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+	<!-- Footer -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_section_item">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa fa-map-marker"></i> Location</p>
+                    <p><i class="fa fa-phone"></i> Call +88 1234567890</p>
+                    <p><i class="fa fa-envelope"></i> tamanna.yeasmin.nira@gmail.com</p>
+                </div>
+                <div class="footer_section_item">
+                    <h3>Our Website</h3>
+                    <p>This website expresses Bangladesh history, culture, beautiful places, sports, etc.</p>
+                    <div class="social_icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer_section_item">
+                    <h3>We are available</h3>
+                    <p>Everyday</p>
+                    <p>10.00 AM - 10.00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
